@@ -1,0 +1,345 @@
+*{
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+body{
+  height: 100%;
+  
+background-image: linear-gradient(to right, #1a1a1c 1%, rgb(55, 53, 63) 100%);
+overflow-x: hidden;
+}
+.wave{
+top: 700px;
+position: relative;
+z-index: -1;
+width: 100%;
+opacity: 0.8;
+height: 550px;
+object-fit: cover;
+
+}
+
+
+header{
+  
+width: 100%;
+border: 1px solid black;
+  background: black;
+
+}
+
+
+.navbar {
+  margin: 10px;
+  padding: 20px ;
+  height: 30px;
+  color: aliceblue;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: sans-serif;
+  
+
+}
+
+
+
+#nav-list {
+align-items: center;
+display: flex;
+gap: 40px;
+list-style-type: none;
+}
+
+.nav-item a{
+text-decoration: none;
+color: rgb(244, 239, 239);
+font-size: 20px;
+
+}
+
+.nav-item.active a{
+  color: #b8b44c;
+  border-bottom: 1px solid yellow;
+  
+}
+.peca-aqui{
+cursor: pointer;
+  width: 100px;
+  height: 40px;
+  background: rgb(208, 206, 68);
+  border-radius: 20px;
+  color: rgb(5, 5, 5);
+  text-decoration: none;
+  border: none;
+  font-size: 20px;
+  transition: ease;
+
+
+
+}
+.peca-aqui:hover{
+  background: #efefee;
+}
+#peca-aqui{
+  cursor: pointer;
+  width: 100px;
+  height: 40px;
+  background: rgb(208, 206, 68);
+  border-radius: 20px;
+  color: rgb(5, 5, 5);
+  text-decoration: none;
+  border: none;
+  font-size: 20px;
+  
+}
+#mobile_btn{
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  color: aliceblue;
+  text-decoration: none;
+  border: none;
+  font-size: 45px;
+  transition:ease-in-out
+}
+#mobile_btn:hover{
+color: #b8b44c;
+}
+.bi bi-fork-knife{
+  width: 100px;
+}
+.logo {
+  color: rgb(157, 140, 45);
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+#peca-aqui{
+transition:  ease;
+
+
+
+}
+#cta H1, p{
+  text-align: center;
+  color: aliceblue;
+  
+
+  
+  
+}
+#cta h1{
+  font-size: 70px;
+}
+span{
+  color: #eee712;
+}
+#peca-aqui:hover{
+  background: #efefee;
+}
+#cta {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  text-decoration: none;
+  align-items: center;
+  margin:20px;
+
+
+}
+
+
+
+
+.redes-sociais{
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  gap: 100px;
+}
+button a{
+
+  text-decoration: none;
+  font-size: 20px;
+  color: #1a1a1c;
+}
+.cardapio, .contato{
+border-radius: 10px;
+width: 300px;
+height: 50px;
+background: #b8b44c;
+
+
+}
+.contato:hover{
+background: #efefee;
+
+
+}
+.cardapio:hover{
+  background: #efefee;
+}
+section{
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  padding: 28px 8%;
+  gap: 620px;
+}
+
+
+
+
+
+#banner{
+  gap: 18px;
+  display: flex;
+  flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+#banner h3{
+  color: aliceblue;
+  position: relative;
+  top: 80px;
+font-size: 40px;
+text-transform: uppercase ;
+
+}
+.prato{
+position: absolute;
+bottom: -30px;
+left: 600px;
+
+
+}
+.fumaça {
+  z-index: -1;
+  position: absolute;
+  bottom: 260px; 
+  left: 52%;
+  transform: translateX(-50%);
+  width: 1200px;
+  height: 300px;
+  background-image: url('img/vecteezy_smoke-concept-design_9929764.png'); 
+  background-size: cover;
+  opacity: 0; 
+  animation-name: evapora;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out; 
+}
+@keyframes evapora {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) scale(0.8); 
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateX(-50%) scale(1.2); 
+  }
+  100% {
+    opacity: 0; 
+    transform: translateX(-50%) scale(1.5); 
+  }
+}
+.redes{
+  width: 40px;
+  height: 39px;
+  border-radius: 50%;
+}
+.redes:hover{
+  box-shadow: 0px 0px 10px 6px #5e5e56;
+  background:  mintcream;
+}
+.items{
+flex-wrap: wrap;
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  width: 100%;
+  bottom: -900px;
+  height: 600px;
+  
+  justify-content: space-around;
+  gap: 30px;
+  
+  
+}
+.items-produtos{
+display: flex;
+position: relative;
+width: 400px;
+height: 600px;
+background-color: #9e9ecf;
+border-radius: 10px;
+flex-direction: column;
+align-items: center;
+gap: 10px;
+text-transform: uppercase;
+
+
+
+
+
+
+
+}
+.items-produtos img{
+  margin-top: 10px;
+width: 90%; 
+    height: 200px; 
+    border-radius: 10px;
+
+
+
+
+
+}
+.items-produtos h3{
+  font-size: 40px;
+  text-transform: uppercase;
+  font-size:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.pedir{
+  font-size: 20px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  height: 40px;
+  width: 150px;
+margin-bottom: 20px ;
+text-transform: uppercase;
+background: #f0f0c0;
+border-radius: 10px;
+margin-top: auto;
+border: #efefee;
+cursor: pointer;
+
+
+}
+.pedir:hover{
+  box-shadow: 0px 0px 4px 4px #1a1a1c;
+  width: 180px;
+  transition: 300ms;
+}
+.items-produtos:hover{
+
+width: 450px;
+height: 600px;
+box-shadow:0px 0px 20px 4px #606069 ;
+transition: 500ms ease-in-out;
+
+
+
+
+
+}
+.descri{
+  color: #1a1a1c;
+  font-size: 20px;
+  
+}

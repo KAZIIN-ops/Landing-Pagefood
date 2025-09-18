@@ -1,0 +1,41 @@
+#mobile_btn{
+  display: none;
+}
+@media screen and (max-width: 1170px) {
+  
+  #nav-list,.peca-aqui{
+    display: none;
+  }
+  #mobile_btn{
+    display: block;
+
+
+  }
+}
+#mobile_menu{
+  display: none;
+}
+#mobile_menu.active{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 12px;
+margin: 12px 0px;
+}
+@media screen and (max-width:1170px) {
+  .prato{
+    display: none;
+  
+
+
+
+  }
+}
+@media screen and (max-width:1170px){
+  .fumaça{
+    display: none;
+  
+  
+  }
+
+  }
