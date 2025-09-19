@@ -13,7 +13,7 @@
   }
 }
 #mobile_menu{
-  display: none;
+  display:none;
 }
 #mobile_menu.active{
 display: flex;
@@ -24,7 +24,7 @@ margin: 12px 0px;
 }
 @media screen and (max-width:1170px) {
   .prato{
-    display: none;
+    display: flex;
   
 
 
@@ -33,9 +33,10 @@ margin: 12px 0px;
 }
 @media screen and (max-width:1170px){
   .fumaça{
-    display: none;
+    display: flex;
   
   
   }
 
   }
+
